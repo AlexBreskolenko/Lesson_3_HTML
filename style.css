@@ -1,0 +1,111 @@
+/*Тут можем добавить стили 
+через @import url ....*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+ 
+/*---- Обнуляем стили----*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    text-decoration: none;
+}
+body /* Плавная прокрутка*/
+{
+    scroll-behavior: smooth;
+    background: #020A18;
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-weight: 600;
+}
+img /*делаем картинку блочным видом*/
+{
+    max-width: 100%;
+    display: block;
+}
+/*--------------------------*/
+
+
+.container /*выравнивание по центру*/
+{
+    max-width: 1146px;
+    margin: 0 auto;
+}
+.navigation
+{
+    /*отступ внутренний*/
+    padding: 39px 0;
+}
+/*подключаем шрифты и прочее*/
+.navigation__link
+{   
+    font-size: 16px;
+    line-height: 22px;
+}
+/*отступ от header до main*/
+.header
+{
+    margin-bottom: 185px;
+}
+/*отступ от main до footer*/
+.main
+{
+    margin-bottom: 200px;
+}
+.content__left-side
+{
+    /*задаем максимальную ширину*/
+    max-width: 604px;
+}
+
+/*сериализуем элемент через класс*/
+.content__left-side h2
+{
+    color:  #3A68B8;
+    font-size: 18px;
+    line-height: 160%; 
+    text-transform: uppercase;
+    /*отступ в низ*/
+    margin-bottom: 10px;
+}
+
+.content__left-side h1
+{
+    color: #FFF;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 130%; 
+    margin-bottom: 40px;
+}
+.content__left-side p
+{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    /*прозрачность*/
+    opacity: 0.7;
+    /*для 3 строк*/
+    max-width: 558px;
+    /*отступ для кнопок*/
+    margin-bottom: 50px;
+}
+/*для кнопки*/
+.btn
+{
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    border-radius: 5px;
+    background: #3A68B8;
+    /*задаем отступы*/
+    padding: 15px 30px;
+    /*отключаем рамки*/
+    border: none;
+    /*устанавливаем курсор*/
+    cursor: pointer;
+
+}
+
